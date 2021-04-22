@@ -1,0 +1,25 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Projeto Next da NLW, criado na primeira aula",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react-script": "^2.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node podcastrnext/pages/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathasGit/NLW-5-Next.git"
+  },
+  "author": "Jonathas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathasGit/NLW-5-Next/issues"
+  },
+  "homepage": "https://github.com/JonathasGit/NLW-5-Next#readme"
+}
