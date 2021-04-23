@@ -1,18 +1,21 @@
-
-
+import format from 'date-fns/format';
+import ptBR from 'date-fns/locale/pt-BR';
 
 
 import styles from './styles.module.scss';
 
 export function Header() {
-    const currentDate = new Date().toLocaleDateString() // Pegar a data atual
+    const currentDate = format(new Date(), 'EEEEEE, d MMMM', {
+        locale: ptBR,
+    }); // Pegar a data atual  
+    // EEEEEE - Retornar o ano, d o dia , MMMM só o mês 
     return (
         <header className={styles.headerContainer}>
             <img src="/logo.svg" alt="Podcastr" />
 
             <p>O melhor para você ouvir,sempre</p>
 
-            <span>Qui, 22 Abril</span>
+            <span>{currentDate}</span>
 
 
         </header>
